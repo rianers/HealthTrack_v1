@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"br.com.healthtrack","l":"Execute"},{"p":"br.com.healthtrack","l":"Person"},{"p":"br.com.healthtrack","l":"PhysicalActivity"},{"p":"br.com.healthtrack","l":"PhysicalActivityUser"},{"p":"br.com.healthtrack","l":"User"}];updateSearchResults();
