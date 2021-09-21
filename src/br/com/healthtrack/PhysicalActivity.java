@@ -1,13 +1,15 @@
 package br.com.healthtrack;
 
-/**	
- * Classe que representa as atividades f�sicas.
+/**
+ * Classe que representa as atividades físicas.
+ * 
  * @author LiftOff
  * @version 1.0
  */
 
 public class PhysicalActivity {
 
+	private int id;
 	private String name;
 	private int duration;
 	private Double calories;
@@ -16,6 +18,14 @@ public class PhysicalActivity {
 		this.name = name;
 		this.duration = duration;
 		this.calories = calories;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -40,6 +50,12 @@ public class PhysicalActivity {
 
 	public void setCalories(Double calories) {
 		this.calories = calories;
+	}
+
+	@Override
+	public String toString() {
+		return "Atividade Física [id=" + this.id + ", nome=" + this.name + ", duração=" + this.duration + ", calorias="
+				+ this.calories + "]!";
 	}
 
 }

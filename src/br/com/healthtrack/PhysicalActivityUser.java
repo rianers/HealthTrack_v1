@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 /**
- * Classe que une as informações de atividade física de um usuário.
+ * Classe que une as informaï¿½ï¿½es de atividade fï¿½sica de um usuï¿½rio.
  * 
  * @author LiftOff
  * @version 1.0
@@ -40,16 +40,16 @@ public class PhysicalActivityUser {
 	}
 
 	/*
-	 * Atribui a data e hora atual ao início da atividade física
+	 * Atribui a data e hora atual ao inï¿½cio da atividade fï¿½sica
 	 */
 	public void startActivity() {
 		this.startTime = LocalDateTime.now();
 	}
 
 	/**
-	 * Atribui a data informada ao início da atividade física
+	 * Atribui a data informada ao inï¿½cio da atividade fï¿½sica
 	 * 
-	 * @param date início da atividade
+	 * @param date inï¿½cio da atividade
 	 */
 	public void startActivity(String date) {
 		DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
@@ -57,14 +57,15 @@ public class PhysicalActivityUser {
 	}
 
 	/**
-	 * Atribui a data e hora atual ao final da atividade física
+	 * Atribui a data e hora atual ao final da atividade fï¿½sica
 	 */
 	public void endActivity() {
 		this.endTime = LocalDateTime.now();
 	}
 
 	/**
-	 * Atribui a data informada ao fim da atividade física
+	 * Atribui a data informada ao fim da atividade fï¿½sica
+	 * 
 	 * @param date fim da atividade
 	 */
 	public void endActivity(String date) {
@@ -73,8 +74,8 @@ public class PhysicalActivityUser {
 	}
 
 	/**
-	 * @return Retorna uma string com o resumo da atividade física registrada pelo
-	 *         usuário.
+	 * @return Retorna uma string com o resumo da atividade fÃ­sica registrada pelo
+	 *         usuÃ¡rio.
 	 */
 	public String generateResume() {
 
@@ -92,7 +93,7 @@ public class PhysicalActivityUser {
 			moreLessCalories = "menos";
 		}
 
-		return String.format("%s, você perdeu %.2f calorias. Por você ter %d anos, seu corpo queima %s calorias.",
+		return String.format("%s, vocÃª perdeu %.2f calorias. Por vocÃª ter %d anos, seu corpo queima %s calorias.",
 				this.user.getName(), calorias, userAge, moreLessCalories);
 	}
 }
