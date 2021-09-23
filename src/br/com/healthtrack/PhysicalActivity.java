@@ -1,5 +1,7 @@
 package br.com.healthtrack;
 
+import java.text.DecimalFormat;
+
 /**
  * Classe que representa as atividades físicas.
  * 
@@ -54,8 +56,9 @@ public class PhysicalActivity {
 
 	@Override
 	public String toString() {
-		return "Atividade Física [id=" + this.id + ", nome=" + this.name + ", duração=" + this.duration + ", calorias="
-				+ this.calories + "]!";
-	}
+		DecimalFormat decimalFormat = new DecimalFormat("#.##");
 
+		return "Atividade Física [id=" + this.id + ", nome=" + this.name + ", duração=" + this.duration + ", calorias="
+				+ decimalFormat.format(this.calories) + "]!";
+	}
 }

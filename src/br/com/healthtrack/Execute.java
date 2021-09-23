@@ -10,11 +10,9 @@ import br.com.healthtrack.DAO.PhysicalActivityDAO;
  * @author LiftOff
  * @version 1.0
  */
-
 public class Execute {
 
 	public static void main(String[] args) {
-
 		User user = new User("carlos.armstrong@fiap.com.br", "123456", 60.8, 1.60, "Carla", LocalDate.of(1995, 07, 21));
 
 		String startTime = "21/08/2021 13:00";
@@ -29,11 +27,8 @@ public class Execute {
 
 		// Fase 6 - Cap 02
 		PhysicalActivityDAO dao = new PhysicalActivityDAO();
-		Execute.createFakePhysicalActivity(dao, 20);
-
-		dao.getAll().forEach(task -> System.out.println(task.toString()));
-
-		Execute.createFakePhysicalActivity(dao, 10);
+		Execute.createFakePhysicalActivity(dao, 30);
+		Execute.createFakePhysicalActivity(dao, 30);
 
 		dao.getAll().forEach(task -> System.out.println(task.toString()));
 	}
@@ -45,5 +40,4 @@ public class Execute {
 			dao.create(name, 7 * n, (8.3 * n) * 1.0);
 		}
 	}
-
 }
