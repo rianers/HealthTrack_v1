@@ -1,13 +1,17 @@
 package br.com.healthtrack;
 
-/**	
- * Classe que representa as atividades f�sicas.
+import java.text.DecimalFormat;
+
+/**
+ * Classe que representa as atividades físicas.
+ * 
  * @author LiftOff
  * @version 1.0
  */
 
 public class PhysicalActivity {
 
+	private int id;
 	private String name;
 	private int duration;
 	private Double calories;
@@ -16,6 +20,14 @@ public class PhysicalActivity {
 		this.name = name;
 		this.duration = duration;
 		this.calories = calories;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -42,4 +54,11 @@ public class PhysicalActivity {
 		this.calories = calories;
 	}
 
+	@Override
+	public String toString() {
+		DecimalFormat decimalFormat = new DecimalFormat("#.##");
+
+		return "Atividade Física [id=" + this.id + ", nome=" + this.name + ", duração=" + this.duration + ", calorias="
+				+ decimalFormat.format(this.calories) + "]!";
+	}
 }

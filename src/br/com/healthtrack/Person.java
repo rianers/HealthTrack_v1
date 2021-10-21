@@ -3,8 +3,9 @@ package br.com.healthtrack;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-/**	
+/**
  * Classe que representa uma pessoa.
+ * 
  * @author LiftOff
  * @version 1.0
  */
@@ -31,7 +32,7 @@ public abstract class Person {
 	}
 
 	/**
-	 * @return Retorna a idade do usu·rio.
+	 * @return Retorna a idade do usu√°rio.
 	 */
 	public long getAge() {
 		return ChronoUnit.YEARS.between(this.birthDate, LocalDate.now());
