@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
+import br.com.healthtrack.entity.PhysicalActivity;
+
 /**
  * Classe que une as informa��es de atividade f�sica de um usu�rio.
  * 

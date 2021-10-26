@@ -1,5 +1,6 @@
-package br.com.healthtrack;
+package br.com.healthtrack.entity;
 
+import java.io.Serializable;
 import java.text.DecimalFormat;
 
 /**
@@ -9,8 +10,8 @@ import java.text.DecimalFormat;
  * @version 1.0
  */
 
-public class PhysicalActivity {
-
+public class PhysicalActivity implements Serializable {
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private String name;
 	private int duration;
@@ -20,6 +21,9 @@ public class PhysicalActivity {
 		this.name = name;
 		this.duration = duration;
 		this.calories = calories;
+	}
+
+	public PhysicalActivity() {
 	}
 
 	public int getId() {
