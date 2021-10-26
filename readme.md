@@ -10,6 +10,11 @@ CREATE TABLE physical_activities
 ```
 
 ```sql
+INSERT INTO physical_activities (name, duration, calories)
+VALUES (?, ?, ?);
+```
+
+```sql
 SELECT * FROM physical_activities ORDER BY id;
 ```
 

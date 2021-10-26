@@ -7,6 +7,8 @@ CREATE TABLE physical_activities
     PRIMARY KEY (id)
 );
 
+INSERT INTO physical_activities (name, duration, calories) VALUES (?, ?, ?);
+
 SELECT * FROM physical_activities ORDER BY id;
 
 UPDATE physical_activities
